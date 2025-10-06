@@ -6,7 +6,7 @@ const App = () => {
 
   const doLogin = () => {
     // PROBLEMA: Senha embutida no código
-    const hardcodedPassword = "senha_secreta_123"; 
+    const hardcodedPassword = "ab53fd243ec86d2ef"; 
 
     if (password === hardcodedPassword) {
       Alert.alert("Sucesso!", "Login realizado com sucesso!");
