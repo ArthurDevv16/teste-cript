@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { PASSWORD } from '@env'; 
 
 const App = () => {
   const [password, setPassword] = useState('');
 
   const doLogin = () => {
-    // PROBLEMA: Senha embutida no código
-    const hardcodedPassword = "ab53fd243ec86d2ef"; 
-
-    if (password === hardcodedPassword) {
+    if (password === PASSWORD) {
       Alert.alert("Sucesso!", "Login realizado com sucesso!");
     } else {
       Alert.alert("Erro", "Senha incorreta.");
